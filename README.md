@@ -1,1 +1,1 @@
-# kicker-auth-service
+# kicker-app-shared-services
