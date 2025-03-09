@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { AuthenticationService } from "../services/authentication.service";
+import { AuthenticationService } from "../services/auth.service";
 
 export class AuthenticateController {
   // Funktion zum Verifizieren der Anmeldedaten eines Users
@@ -32,7 +32,7 @@ export class AuthenticateController {
   static async login(req: Request, res: Response): Promise<Response> {
     try {
       const { username, password } = req.body;
-      const result = AuthenticationService.login(username, password);
+      const result = await AuthenticationService.login(username, password);
       return res.status(200).json(result);
     } catch (error) {
       return res.status(400).json({ message: error.message });

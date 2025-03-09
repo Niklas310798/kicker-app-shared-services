@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 EXPOSE 3000
 
 # Verwende die aktuellste Version von npm
-RUN npm install npm@latest -g
+RUN npm install npm@10.8.2 -g
 COPY package*.json /
 
 # Installieren aller Abhängigkeiten, um die Anwendung produktiv zu betreiben
