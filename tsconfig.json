@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./build",
+    "types": ["node"], // Stellt sicher, dass Node-Typen verfügbar sind
+    "esModuleInterop": true, // Falls du CommonJS-Module importieren möchtest
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "resolveJsonModule": true // ,
+    // "strict": true
+  },
+  "include": ["src"]
+}
